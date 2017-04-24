@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>problem_4</title>
+</head>
+<body>
+    <script>
+        var total = 0; //sets a leash to hold the variable
+        for (var i = 0; i < 1500; i++) {//starts at 0, ends at 1499, increases by one
+            if (i % 3 == 0 || i % 5 == 0) {//each increase checks for 3 OR 5 multiple
+                total = total + i;//if one is found, its added to the leash
+            }//back to the top for the next number in the count until 1499
+        }
+        console.log(total);//prints it out in the console.
+    </script>
+</body>
+</html>

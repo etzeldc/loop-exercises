@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>problem_6</title>
+</head>
+<body>
+    <script>
+        var max = 100, min = 0;//setting minimum and maximum values
+        while (answer !== "YES") {//so long as the answer to the prompt is not equal to "YES", the loop runs
+            var halfer = Math.floor((min + max) / 2);//sets a var that establishes the midway point between initial, and then subsequent, min/max values
+            var answer = prompt("Type an L if it's too low, an H if it's too high, or YES if it's correct. " + "Is your number: " + halfer + "?");//prompt asking if that midway point is your number
+            if (answer === "L") {//number is too low...
+                min = halfer;//changes min to that value and repeats loop
+            } else if (answer === "H") {//number is too high...
+                max = halfer;//changes max to that value and repeats loop
+            } else if (answer === "YES") {//we're done
+                alert("I knew I'd guess it!")
+            } else {//any other undefined entry
+                alert("That's not an answer!")
+            }
+        }
+    </script>
+</body>
+</html>

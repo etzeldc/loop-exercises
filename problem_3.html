@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>problem_3</title>
+</head>
+<body>
+    <script>
+        var board = ("");
+        var size = 8;
+        // the following iterates vertically
+        for (var i = 0; i < size; i++) {
+            //BUT!!! before leaving that top bit, we iterate horizontally
+            for (var j = 0; j < size; j++) {
+                //the following checks if the values are even and assigns the string across until finished
+                if ((j + i) % 2 == 0 ) {
+                    board += ("#"); 
+                } else { 
+                    board += (" ");
+                }
+            }
+            //once finished, the line breaks
+            board +=("\n");
+        //kreturn to top to fill in remaining boards
+        }
+        console.log(board);
+        //prints!
+    </script>
+</body>
+</html>
